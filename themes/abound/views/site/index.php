@@ -3,6 +3,13 @@
 
 $this->pageTitle=Yii::app()->name;
 $baseUrl = Yii::app()->theme->baseUrl; 
+
+$autoUpdate = <<<EOL
+setInterval(function(){
+    $.fn.yiiGridView.update('goautodial'); 
+},3000);
+EOL;
+Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScript::POS_READY);
 ?>
 
 <div class="row-fluid">
@@ -24,6 +31,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
         )); ?>
         <?php 
             $this->widget('bootstrap.widgets.TbGridView', array(
+              'id'=>"goautodial",
               'type'=>"stripped bordered",
               'dataProvider'=>$dataprovider,
               'ajaxUpdate' => true,
