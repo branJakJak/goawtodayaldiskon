@@ -14,10 +14,19 @@ $baseUrl = Yii::app()->theme->baseUrl;
     	   ));
         ?>
         <?php 
+        $this->widget('bootstrap.widgets.TbAlert', array(
+            'fade'=>true,
+            'closeText'=>'×', 
+            'alerts'=>array( 
+                'success'=>array('block'=>true, 'fade'=>true, 'closeText'=>'×'), 
+                'error'=>array('block'=>true, 'fade'=>true, 'closeText'=>'×'), 
+            ),
+        )); ?>
+        <?php 
             $this->widget('bootstrap.widgets.TbGridView', array(
-              'type'=>"stripped",
+              'type'=>"stripped bordered",
               'dataProvider'=>$dataprovider,
-              'ajaxUpdate' => false,
+              'ajaxUpdate' => true,
               'columns'=>array(
                     array(
                         'header'=>'Agent',
