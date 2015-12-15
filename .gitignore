@@ -1,0 +1,12 @@
+protected/runtime/*
+assets/
+protected/data/*
+*.bat
+.todo
+protected/components/UserIdentity.php
+protected/vendor/
+protected/tests/
+protected/config/
+*.dev
+*.prod
+requirements/
