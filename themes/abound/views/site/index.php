@@ -14,7 +14,8 @@ $baseUrl = Yii::app()->theme->baseUrl;
     	   ));
         ?>
         <?php 
-            $this->widget('zii.widgets.grid.CGridView', array(
+            $this->widget('bootstrap.widgets.TbGridView', array(
+              'type'=>"stripped",
               'dataProvider'=>$dataprovider,
               'ajaxUpdate' => false,
               'columns'=>array(
@@ -33,7 +34,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
                     array(
                         'header'=>'Action',
                         'type'=>'raw',
-                        'value'=>'CHtml::link("disconnect", array("disconnect/agent","agent"=>$data[\'agent\']), array("class"=>"btn btn-default"))',
+                        'value'=>'CHtml::link("disconnect", array("disconnect/agent","agent"=>$data["agent"]), array("class"=>"","confirm"=>"Are you sure you want to disconnect this agent/user ? "))',
                     ),
                 ),
             ));
