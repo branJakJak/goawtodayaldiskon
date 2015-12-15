@@ -1,5 +1,5 @@
 protected/runtime/*
-assets/
+/assets
 protected/data/*
 *.bat
 .todo
@@ -8,4 +8,4 @@ protected/vendor/
 protected/tests/*
 *.dev
 *.prod
-requirements/
+/requirements
