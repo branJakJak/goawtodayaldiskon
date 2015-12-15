@@ -103,6 +103,14 @@ return array(
             'username' => 'roadto_agentmon',
             'password' => 'hitman052529',
             'charset' => 'utf8',  
+        ),        
+        'goautodial_db'=>array(
+            'class'=>"CDbConnection",
+            'connectionString' => 'mysql:host=213.171.204.244;dbname=asterisk',
+            'emulatePrepare' => true,
+            'username' => 'rooty',
+            'password' => 'Mad4itNOW!!',
+            'charset' => 'utf8',  
         ),
         'errorHandler' => array(
             // use 'site/error' action to display errors

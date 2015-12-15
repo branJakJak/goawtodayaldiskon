@@ -27,14 +27,9 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
-	}
-
-	public function actionTest()
-	{
-		$this->render('test');
+		$remoteAgents = new GoAutoDialRemoteUser();
+		$dataprovider = new CArrayDataProvider($remoteAgents->getAll());
+		$this->render('index',compact('dataprovider'));
 	}
 
 	/**

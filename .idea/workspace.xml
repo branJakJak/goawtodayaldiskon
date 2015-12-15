@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="499c7e6b-0cca-4891-a780-575fa1fcc5c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/console.prod.php" afterPath="$PROJECT_DIR$/protected/config/console.prod.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/abound/views/site/index.php" afterPath="$PROJECT_DIR$/themes/abound/views/site/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/test.php" afterPath="$PROJECT_DIR$/protected/config/test.php" />
-    </list>
+    <list default="true" id="499c7e6b-0cca-4891-a780-575fa1fcc5c2" name="Default" comment="" />
     <ignored path="GoAutoDialDiscon.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450172346992" ignored="false" />
@@ -43,7 +38,7 @@
       <file leaf-file-name="GoAutodialRemoteTest.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/tests/unit/components/GoAutodialRemoteTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.4568138">
+            <state line="19" column="1" selection-start="429" selection-end="429" vertical-scroll-proportion="0.42418426">
               <folding />
             </state>
           </provider>
@@ -352,7 +347,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/tests/unit/components/GoAutodialRemoteTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.4568138">
+        <state line="19" column="1" selection-start="429" selection-end="429" vertical-scroll-proportion="0.42418426">
           <folding />
         </state>
       </provider>
