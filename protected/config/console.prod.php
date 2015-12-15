@@ -18,7 +18,6 @@ return array(
             'password' => 'hitman052529',
             'charset' => 'utf8',  
         ),
-
 	),
 	'modules'=>array(
         'user'=>array(
