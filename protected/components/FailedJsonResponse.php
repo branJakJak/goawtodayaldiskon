@@ -10,18 +10,16 @@
 class FailedJsonResponse extends BaseJsonResponse
 {
 
-    function __construct()
+    public function __construct()
     {
+        $this->status = "failed";
+        $this->messageContent = "failed";
         $this->message = array(
-            "status" => 'failed',
-            "message" => 'failed',
+            "status" => $this->status,
+            "message" => $this->messageContent,
         );
     }
 
-    function __toString()
-    {
-        return json_encode($this->message);
-    }
 
 
 }

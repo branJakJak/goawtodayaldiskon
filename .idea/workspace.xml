@@ -2,22 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="499c7e6b-0cca-4891-a780-575fa1fcc5c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/components/BaseJsonResponse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/components/FailedJsonResponse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/RemoteLogoutController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.phpintel/ce0cb508a2ea97f928a3a46551a82c1a" afterPath="$PROJECT_DIR$/.phpintel/ce0cb508a2ea97f928a3a46551a82c1a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/Hungup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/Logout.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/LogoutAll.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/PauseCode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/PauseCodeUpdate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/SendNote.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.phpintel/a2e8aa404724693f8854e3f340ed3355" afterPath="$PROJECT_DIR$/.phpintel/a2e8aa404724693f8854e3f340ed3355" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.phpintel/e81023f463cba6e3208281aab426ae80" afterPath="$PROJECT_DIR$/.phpintel/e81023f463cba6e3208281aab426ae80" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.phpintel/index" afterPath="$PROJECT_DIR$/.phpintel/index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/DisconnectController.php" afterPath="$PROJECT_DIR$/protected/controllers/DisconnectController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/GoAutodialRemote.php" afterPath="$PROJECT_DIR$/protected/components/GoAutodialRemote.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/console.php" afterPath="$PROJECT_DIR$/protected/config/console.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/abound/views/site/index.php" afterPath="$PROJECT_DIR$/themes/abound/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/BaseJsonResponse.php" afterPath="$PROJECT_DIR$/protected/components/BaseJsonResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/FailedJsonResponse.php" afterPath="$PROJECT_DIR$/protected/components/FailedJsonResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/SuccessJsonResponse.php" afterPath="$PROJECT_DIR$/protected/components/SuccessJsonResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.dev.php" afterPath="$PROJECT_DIR$/protected/config/main.dev.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GoAutoDialDiscon.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450172346992" ignored="false" />
+    <file path="/Dummy.txt" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450211786266" ignored="false" />
     <file path="/GoAutodialRemote.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450193375508" ignored="false" />
     <file path="/GoAutodialRemoteTest.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450172421625" ignored="false" />
     <file path="/SuccessJsonResponse.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450193078449" ignored="false" />
@@ -25,6 +28,13 @@
     <file path="/PauseController.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450193168568" ignored="false" />
     <file path="/RemoteLogoutController.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450193353095" ignored="false" />
     <file path="/AgentController.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450193453310" ignored="false" />
+    <file path="/GoAutodialRemotePauseCode.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450212397389" ignored="false" />
+    <file path="/BaseGoAutodialRemote.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450212128257" ignored="false" />
+    <file path="/GoAutodialRemoteHungup.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450212564173" ignored="false" />
+    <file path="/GoAutodialRemotePauseCodeUpdate.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450213297558" ignored="false" />
+    <file path="/GoAutodialRemoteSendNote.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450213107353" ignored="false" />
+    <file path="/GoAutodialRemoteLogout.php" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450213240322" ignored="false" />
+    <file path="/a.dummy" changelist="499c7e6b-0cca-4891-a780-575fa1fcc5c2" time="1450213458227" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,73 +54,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PauseController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/PauseController.php">
+      <file leaf-file-name="Hungup.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/Hungup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="13" selection-start="1943" selection-end="1943" vertical-scroll-proportion="-8.269231">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SuccessJsonResponse.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/SuccessJsonResponse.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="10" selection-start="228" selection-end="228" vertical-scroll-proportion="-8.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FailedJsonResponse.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/components/FailedJsonResponse.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="171" selection-end="189" vertical-scroll-proportion="0.102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoteLogoutController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/RemoteLogoutController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="9" selection-start="1506" selection-end="1506" vertical-scroll-proportion="-6.3076925">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgentController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/AgentController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="26" selection-start="748" selection-end="748" vertical-scroll-proportion="-6.1538463">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DisconnectController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/DisconnectController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="565" selection-end="1005" vertical-scroll-proportion="-7.8461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoAutodialRemote.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/GoAutodialRemote.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-10.115385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseJsonResponse.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/BaseJsonResponse.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="387" selection-end="387" vertical-scroll-proportion="-9.807693">
+            <state line="10" column="5" selection-start="328" selection-end="328" vertical-scroll-proportion="0.24952015">
               <folding />
             </state>
           </provider>
@@ -134,14 +81,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/tests/unit/components/GoAutodialRemoteTest.php" />
-        <option value="$PROJECT_DIR$/protected/components/BaseJsonResponse.php" />
-        <option value="$PROJECT_DIR$/protected/components/SuccessJsonResponse.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/PauseController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/RemoteLogoutController.php" />
-        <option value="$PROJECT_DIR$/protected/components/GoAutodialRemote.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/AgentController.php" />
         <option value="$PROJECT_DIR$/protected/components/FailedJsonResponse.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/BaseGoAutodialRemote.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/interface/GoAutodialRemoteCommandInterface.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/GoAutodialRemotePauseCode.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/GoAutodialRemoteHungup.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/GoAutodialRemoteSendNote.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/GoAutodialRemotePauseCodeUpdate.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/GoAutodialRemoteLogout.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/GoAutodialRemoteLogoutAll.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/Hungup.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/Logout.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/LogoutAll.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/SendNote.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/PauseCodeUpdate.php" />
+        <option value="$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/PauseCode.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.dev.php" />
       </list>
     </option>
   </component>
@@ -150,6 +105,25 @@
     <option name="x" value="72" />
     <option name="width" value="1288" />
     <option name="height" value="728" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -177,7 +151,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -264,7 +237,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RemoteGoAutoDial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoAutoDialDiscon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoAutoDialDiscon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RemoteGoAutoDial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoAutoDialDiscon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoAutoDialDiscon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoAutoDialDiscon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoAutoDialDiscon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,11 +327,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="PublishConfig">
@@ -309,6 +353,9 @@
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
@@ -329,25 +376,25 @@
     <frame x="72" y="0" width="1288" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21615008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25367048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -411,72 +458,109 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/tests/unit/components/GoAutodialRemoteTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="354" selection-end="354" vertical-scroll-proportion="0.32629558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/prod_mode.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/BaseJsonResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="387" selection-end="387" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/GoAutodialRemote.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-10.115385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/RemoteLogoutController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="9" selection-start="1506" selection-end="1506" vertical-scroll-proportion="-6.3076925">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/DisconnectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="565" selection-end="1005" vertical-scroll-proportion="-7.8461537">
+        <state line="54" column="9" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.11900192">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/AgentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="26" selection-start="748" selection-end="748" vertical-scroll-proportion="-6.1538463">
+        <state line="49" column="26" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.34740883">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/PauseController.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/DisconnectController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="13" selection-start="1943" selection-end="1943" vertical-scroll-proportion="-8.269231">
+        <state line="47" column="0" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.7715931">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/SuccessJsonResponse.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/GoAutodialRemote.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="228" selection-end="228" vertical-scroll-proportion="-8.5">
+        <state line="80" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.18426104">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/FailedJsonResponse.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/BaseJsonResponse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="171" selection-end="189" vertical-scroll-proportion="0.102">
+        <state line="67" column="0" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.706334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/BaseGoAutodialRemote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="10" selection-start="513" selection-end="513" vertical-scroll-proportion="0.32629558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/interface/GoAutodialRemoteCommandInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="223" selection-end="223" vertical-scroll-proportion="0.32629558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/SendNote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.53543305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/PauseCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="278" selection-end="278" vertical-scroll-proportion="0.3243762">
+          <folding>
+            <element signature="e#6#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/PauseCodeUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="29" selection-end="29" vertical-scroll-proportion="0.09788868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/Logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.35892513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/LogoutAll.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="12" selection-start="20" selection-end="20" vertical-scroll-proportion="0.09788868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/console.prod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="22" selection-start="270" selection-end="270" vertical-scroll-proportion="0.2284069">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="52" selection-start="881" selection-end="881" vertical-scroll-proportion="0.29366603">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/libs/RemoteGoAutoDial/class/Hungup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="328" selection-end="328" vertical-scroll-proportion="0.24952015">
           <folding />
         </state>
       </provider>

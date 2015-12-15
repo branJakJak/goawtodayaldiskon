@@ -6,18 +6,13 @@
 class SuccessJsonResponse extends BaseJsonResponse
 {
 
-    function __construct()
+   public function __construct()
     {
+        $this->status = "ok";
+        $this->messageContent = "success";
         $this->message = array(
-            "status"=>'ok',
-            "message"=>'success',
+            "status" => $this->status,
+            "message" => $this->messageContent,
         );
     }
-
-    function __toString()
-    {
-        return json_encode($this->message);
-    }
-
-
 }
