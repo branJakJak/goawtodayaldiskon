@@ -158,13 +158,7 @@ Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScrip
         <div style="padding: 30px;padding-top : 60px;" class='pull-right'>
             <div class="btn-group">
                 <button onclick="pauseSelected()" type="button" class="btn btn-default">
-                    Logout all
-                </button>
-                <button type="button" class="btn btn-default" onclick="logoutSelectedUser()">
-                    Logout user
-                </button>
-                <button type="button" class="btn btn-default" onclick="sendMessageToSelected()">
-                    Send message
+                    <span class='icon-off'></span>Logout all
                 </button>
             </div>
         </div>
