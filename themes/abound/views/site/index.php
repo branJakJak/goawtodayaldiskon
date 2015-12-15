@@ -7,7 +7,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
 $autoUpdate = <<<EOL
 setInterval(function(){
     $.fn.yiiGridView.update('goautodial'); 
-},3000);
+},5000);
 EOL;
 Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScript::POS_READY);
 ?>
@@ -51,7 +51,7 @@ Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScrip
                     array(
                         'header'=>'Action',
                         'type'=>'raw',
-                        'value'=>'CHtml::link("disconnect", array("disconnect/agent","agent"=>$data["user"] ), array("class"=>"","confirm"=>"Are you sure you want to disconnect this agent/user ? "))',
+                        'value'=>'CHtml::link("pause", array("disconnect/agent","agent"=>$data["user"] ), array("class"=>"","confirm"=>"Are you sure you want to disconnect this agent/user ? "))',
                     ),
                 ),
             ));
