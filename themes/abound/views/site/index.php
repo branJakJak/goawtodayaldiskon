@@ -172,7 +172,7 @@ Yii::app()->clientScript->registerScriptFile($baseUrl.'/plugins/alertify.js-0.3.
             </div>
         </div>
 
-        <div style="padding: 30px;padding-top : 80px;" class='pull-right'>
+        <div style="padding: 30px;padding-top : 90px;" class='pull-right'>
             <div class="btn-group">
                 <button onclick="logoutAllUser()" type="button" class="btn btn-default">
                     <span class='icon-off'></span> Logout all
