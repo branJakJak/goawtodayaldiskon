@@ -29,7 +29,8 @@ class SiteController extends Controller
 	{
 		$remoteAgents = new GoAutoDialRemoteUser();
 		$alldata = $remoteAgents->getAll();
-		$dataprovider = new CArrayDataProvider($alldata);
+		$dataprovider = new CArrayDataProvider($alldata,array('keyField' => 'live_agent_id',));
+		$dataprovider->pagination = false;
 		$this->render('index',compact('dataprovider'));
 	}
 

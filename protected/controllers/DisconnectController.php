@@ -37,12 +37,11 @@ class DisconnectController extends CController
     public function actionAgent($agent)
     {
         $remote = new GoAutodialRemote();
-        $res = 
-        $remote->send($agent);
+        $remote->disconnectAll($agent);
         if (stripos($res, "SUCCESS") !== false ) {
-        	Yii::app()->user->setFlash("success","Agent paused");
+        	Yii::app()->user->setFlash("success","All Agents are logged out");
         }else if (stripos($res, "ERROR") !== false) {
-			Yii::app()->user->setFlash("error","Pause action failed");
+			Yii::app()->user->setFlash("error","'Logout all' action failed");
         }
         $this->redirect(array('site/index'));
     }
