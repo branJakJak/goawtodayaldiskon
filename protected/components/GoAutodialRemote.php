@@ -19,8 +19,8 @@ class GoAutodialRemote {
 		$curlURL .= http_build_query($httpParams);
 		$curlres = curl_init($curlURL);
 		curl_setopt($curlres, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($curlres, CURLOPT_SSL_VERIFYHOST, true);
-		curl_setopt($curlres, CURLOPT_SSL_VERIFYPEER, true);
+		curl_setopt($curlres, CURLOPT_SSL_VERIFYHOST, false);
+		curl_setopt($curlres, CURLOPT_SSL_VERIFYPEER, false);
 		$curlResRaw = curl_exec($curlres);
 		Yii::log($curlResRaw, CLogger::LEVEL_INFO,'info');
 		return $curlResRaw;
