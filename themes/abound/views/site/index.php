@@ -34,7 +34,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
                     array(
                         'header'=>'Action',
                         'type'=>'raw',
-                        'value'=>'CHtml::link("disconnect", array("disconnect/agent","agent"=>$data["agent"]), array("class"=>"","confirm"=>"Are you sure you want to disconnect this agent/user ? "))',
+                        'value'=>'CHtml::link("disconnect", array("disconnect/agent","agent"=>$data["user"] ), array("class"=>"","confirm"=>"Are you sure you want to disconnect this agent/user ? "))',
                     ),
                 ),
             ));
