@@ -29,8 +29,6 @@ class SiteController extends Controller
 	{
 		$remoteAgents = new GoAutoDialRemoteUser();
 		$alldata = $remoteAgents->getAll();
-		print_r($alldata);
-		die();
 		$dataprovider = new CArrayDataProvider($alldata);
 		$this->render('index',compact('dataprovider'));
 	}
