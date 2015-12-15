@@ -5,8 +5,7 @@ protected/data/*
 .todo
 protected/components/UserIdentity.php
 protected/vendor/
-protected/tests/
-protected/config/
+protected/tests/*
 *.dev
 *.prod
 requirements/
