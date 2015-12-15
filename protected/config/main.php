@@ -108,8 +108,8 @@ return array(
             'class'=>"CDbConnection",
             'connectionString' => 'mysql:host=213.171.204.244;dbname=asterisk',
             'emulatePrepare' => true,
-            'username' => 'rooty',
-            'password' => 'Mad4itNOW!!',
+            'username' => 'cron',
+            'password' => '1234',
             'charset' => 'utf8',  
         ),
         'errorHandler' => array(
