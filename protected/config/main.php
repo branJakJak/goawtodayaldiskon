@@ -6,8 +6,8 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'My Web Application',
-    'theme' => 'dela_dashboard',
+    'name' => 'GoAutoDial',
+    'theme' => 'abound',
     // preloading 'log' component
     'preload' => array('log'),
     'aliases' => array(
@@ -98,10 +98,10 @@ return array(
             ),
         ),
         'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=yiitempalte1a',
+            'connectionString' => 'mysql:host=localhost;dbname=roadto_agentmon',
             'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => 'root',
+            'username' => 'roadto_agentmon',
+            'password' => 'hitman052529',
             'charset' => 'utf8',  
         ),
         'errorHandler' => array(
@@ -120,7 +120,7 @@ return array(
                     'logFile' => "remote_command_log",
                     'levels' => 'info',
                 ),
-                
+
             // uncomment the following to show log messages on web pages
             /*
               array(

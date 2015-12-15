@@ -23,7 +23,7 @@ $gridDataProvider = new CArrayDataProvider(array(
 		$this->beginWidget('zii.widgets.CPortlet', array(
 			'title'=>'Agent Monitoring',
 			'titleCssClass'=>''
-		));
+	));
 		?>
         
         <table class="table table-hover">
