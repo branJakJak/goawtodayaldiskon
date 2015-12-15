@@ -6,8 +6,10 @@ class GoAutoDialRemoteUser
 {
 	public function getAll()
 	{
-		$sqlCommand = "select * from vicidial_live_agents";
-		$command = Yii::app()->goautodial_db->createCommand($sqlCommand);
-		return $sqlCommand->queryAll();
+		$curlURL = "http://213.171.204.244/listagents.php";
+		$curlres = curl_init($curlURL);
+		curl_setopt($curlres, CURLOPT_RETURNTRANSFER, true);
+		$curlResRaw = curl_exec($curlres);
+		return json_decode($curlResRaw, true);
 	}
 }

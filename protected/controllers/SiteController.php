@@ -28,7 +28,10 @@ class SiteController extends Controller
 	public function actionIndex()
 	{
 		$remoteAgents = new GoAutoDialRemoteUser();
-		$dataprovider = new CArrayDataProvider($remoteAgents->getAll());
+		$alldata = $remoteAgents->getAll();
+		print_r($alldata);
+		die();
+		$dataprovider = new CArrayDataProvider($alldata);
 		$this->render('index',compact('dataprovider'));
 	}
 
