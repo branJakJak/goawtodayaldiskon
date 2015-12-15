@@ -16,10 +16,11 @@ $baseUrl = Yii::app()->theme->baseUrl;
         <?php 
             $this->widget('zii.widgets.grid.CGridView', array(
               'dataProvider'=>$dataprovider,
+              'ajaxUpdate' => false,
               'columns'=>array(
                     array(
                         'header'=>'Agent',
-                        'value'=>'$data["agent"]',
+                        'value'=>'$data["user"]',
                     ),
                     array(
                         'header'=>'Status',
@@ -31,7 +32,8 @@ $baseUrl = Yii::app()->theme->baseUrl;
                     ),
                     array(
                         'header'=>'Action',
-                        'value'=>'<button onclick="disconnectUser(\'$data["agent"]\')" type="button" class="btn btn-default">disconnect</button>',
+                        'type'=>'raw',
+                        'value'=>'CHtml::link("disconnect", array("disconnect/agent","agent"=>$data[\'agent\']), array("class"=>"btn btn-default"))',
                     ),
                 ),
             ));
