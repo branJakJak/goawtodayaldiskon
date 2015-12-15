@@ -38,9 +38,9 @@ class DisconnectController extends CController
     {
         $remote = new GoAutodialRemote();
         $res = $remote->send($agent);
-        if (strpos($res, "SUCCESS")) {
+        if (strpos($res, "SUCCESS") !== false ) {
         	Yii::app()->user->setFlash("success","Agent disconnected");
-        }else if (strpos($res, "ERROR")) {
+        }else if (strpos($res, "ERROR") !== false) {
 			Yii::app()->user->setFlash("error","Disconnection failed");
         }
         $this->redirect(array('site/index'));
