@@ -36,9 +36,9 @@ class PauseController extends CController
         $remote = new GoAutodialRemote();
         $res = $remote->pause($agent);
         if (stripos($res, "SUCCESS") !== false ) {
-        	Yii::app()->user->setFlash("success","Agent paused");
+        	Yii::app()->user->setFlash("success","Pause code updated");
         }else if (stripos($res, "ERROR") !== false) {
-			Yii::app()->user->setFlash("error","Pause action failed");
+			Yii::app()->user->setFlash("error","Pause code update failed");
         }
         if (Yii::app()->request->isAjaxRequest) {
         	header("Content-Type: application/json");
@@ -53,27 +53,23 @@ class PauseController extends CController
         $remote = new GoAutodialRemote();
         $res = $remote->changePauseCode($agent ,"pause_code" , $pause_code );
         if (stripos($res, "SUCCESS") !== false ) {
-        	Yii::app()->user->setFlash("success","Success");
+        	Yii::app()->user->setFlash("success","Pause code updated");
 	        if (Yii::app()->request->isAjaxRequest) {
 	        	header("Content-Type: application/json");
 	        	echo new SuccessJsonResponse();
 	        	Yii::app()->end();
-	        }
+	        }else{
+	            $this->redirect(array('site/index'));
+        	}
         }else if (stripos($res, "ERROR") !== false) {
-			Yii::app()->user->setFlash("error","Action failed");
+			Yii::app()->user->setFlash("error","Pause code update failed");
 	        if (Yii::app()->request->isAjaxRequest) {
 	        	header("Content-Type: application/json");
 	        	echo new FailedJsonResponse();
 	        	Yii::app()->end();
-	        }
-        }
-        if (Yii::app()->request->isAjaxRequest) {
-        	header("Content-Type: application/json");
-        	echo new SuccessJsonResponse();
-        	Yii::app()->end();
-        }
-        else{
-            $this->redirect(array('site/index'));
+	        }else{
+            	$this->redirect(array('site/index'));
+        	}
         }
 	}
 }

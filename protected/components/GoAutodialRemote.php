@@ -23,7 +23,32 @@ class GoAutodialRemote {
 			"value" =>$value_param
 		);
 		return $this->send($otherParams);
-		
+	}
+	public function hungUp($agent)
+	{
+		$otherParams = array(
+			"agent_user" =>$agent,
+			"function" =>"external_hangup",
+			"value" =>"1",
+		);
+		$this->send($otherParams);
+		$otherParams = array(
+			"agent_user" =>$agent,
+			"function" =>"external_status",
+			"value" =>"DCMGR",
+		);
+		return $this->send($otherParams);
+	}
+	public function sendNote($agent_user,$notes)
+	{
+		$otherParams = array(
+			"function" =>"set_timer_action",
+			"agent_user" =>$agent_user,
+			"value" =>"MESSAGE_ONLY",
+			"notes" =>$notes,
+			"rank" =>"MESSAGE_ONLY",
+		);
+		return $this->send($otherParams);
 	}
 
     /**

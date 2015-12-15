@@ -1,7 +1,10 @@
 <?php 
-
-class AgentController extends Controller
+/**
+* HungUpController
+*/
+class HungUpController extends Controller
 {
+
 	/**
 	 * @return array action filters
 	 */
@@ -21,7 +24,7 @@ class AgentController extends Controller
 	{
 		return array(
 			array('allow',
-				'actions'=>array('json','showScreen'),
+				'actions'=>array('agent'),
 				'users'=>array('@'),
 			),
 			array('deny', 
@@ -29,36 +32,32 @@ class AgentController extends Controller
 			),
 		);
 	}
-    public function actionJson()
-    {
-    	header("Content-Type: application/json");
-		$remoteAgents = new GoAutoDialRemoteUser();
-		$alldata = $remoteAgents->getAll();
-		echo json_encode($alldata);
-    }
-    public function actionShowScreen($user , $message)
+
+
+    public function actionAgent($agent)
     {
         $remote = new GoAutodialRemote();
-        $res = $remote->sendNote($user,$message);
+        $res = $remote->hungUp($agent);
         if (stripos($res, "SUCCESS") !== false ) {
-        	Yii::app()->user->setFlash("success","Message sent");
-        	if (Yii::app()->request->isAjaxRequest) {
-        		header("Content-Type: application/json");
+        	Yii::app()->user->setFlash("success","Success");
+	        if (Yii::app()->request->isAjaxRequest) {
+	        	header("Content-Type: application/json");
 	        	echo new SuccessJsonResponse();
 	        	Yii::app()->end();
-        	}else{
-        		$this->redirect(array('site/index'));
+	        }else{
+	            $this->redirect(array('site/index'));
         	}
         }else if (stripos($res, "ERROR") !== false) {
-			Yii::app()->user->setFlash("error","Cant send message");
+			Yii::app()->user->setFlash("error","Action failed");
 	        if (Yii::app()->request->isAjaxRequest) {
 	        	header("Content-Type: application/json");
 	        	echo new FailedJsonResponse();
 	        	Yii::app()->end();
 	        }else{
-	        	$this->redirect(array('site/index'));
-	        }
+            	$this->redirect(array('site/index'));
+        	}
         }
     }
+
 
 }

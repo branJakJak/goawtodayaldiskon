@@ -15,6 +15,16 @@ setInterval(function(){
 EOL;
 Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScript::POS_READY);
 
+
+
+
+
+Yii::app()->clientScript->registerCssFile($baseUrl.'/plugins/alertify.js-0.3.11/themes/alertify.core.css');
+Yii::app()->clientScript->registerCssFile($baseUrl.'/plugins/alertify.js-0.3.11/themes/alertify.default.css');
+Yii::app()->clientScript->registerScriptFile($baseUrl.'/plugins/alertify.js-0.3.11/lib/alertify.min.js', CClientScript::POS_END);
+
+
+
 ?>
 <script type="text/javascript">
     window.agentCollection = {};
@@ -36,10 +46,12 @@ Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScrip
             if (e) {
                 default_pause_code =  str;
             }
+            alertify.log("Sending message. Please wait.");
+            for(var propertyName in window.agentCollection) {
+                window.pauseUser(window.agentCollection[propertyName]  , default_pause_code);
+            }
+
         }, "Pause code");
-        for(var propertyName in window.agentCollection) {
-            window.pauseUser(window.agentCollection[propertyName]  , default_pause_code);
-        }
     }
     /**
      * Pause the user agent
@@ -71,10 +83,29 @@ Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScrip
             window.canUpdateTable = true;
         });
     }
+    function hungUpSelected()
+    {
+        alertify.log("Hunging up user agents. Please wait.");
+        for(var propertyName in window.agentCollection) {
+            window.hungUpAgent(window.agentCollection[propertyName]);
+        }
+    }
+    function hungUpAgent(current_agent) {
+        jQuery.get('/hungUp/agent', {'agent': current_agent}, function(data, textStatus, xhr) {
+            if (data.status == 'ok') {
+                alertify.success(current_agent + " is now hunged up");
+            }else{
+                alertify.error("Cant hung "+current_agent);
+            }
+            window.canUpdateTable = true;
+        });
+        
+    }
     /**
      * Logs out all users
      */
     function logoutAllUser(){
+        alertify.log("Logging out all user agents. Please wait.");
         jQuery.get('/remoteLogout/all', null, function(data, textStatus, xhr) {
             if (data.status == 'ok') {
                 alertify.success("All users are logged out");
@@ -85,15 +116,16 @@ Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScrip
         });
     }
     function sendMessageToSelected() {
-        var messageStr = "";
+        var messageStr = " ";
         alertify.prompt("Message", function (e, str) {
             if (e) {
                 messageStr = str;
             }
+            alertify.log("Sending message. Please wait.");
+            for(var propertyName in window.agentCollection) {
+                window.send_message(window.agentCollection[propertyName] , messageStr);
+            }
         }, "Message");
-        for(var propertyName in window.agentCollection) {
-            window.send_message(window.agentCollection[propertyName] , messageStr);
-        }
     }
     /**
      * Send message
@@ -108,14 +140,6 @@ Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScrip
             window.canUpdateTable = true;
         });
     }
-    /**
-     * Puts screen message to user agent
-     */
-    function put_screen_message (usergent , message) {
-        /*@TODo - after ajax update window.canUpdateTable = true*/
-    }
-
-
 
 </script>
 <div class="row-fluid">
@@ -127,16 +151,6 @@ Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScrip
     	   ));
         ?>
 
-        <?php 
-        $this->widget('bootstrap.widgets.TbAlert', array(
-            'fade'=>true,
-            'closeText'=>'×', 
-            'alerts'=>array( 
-                'success'=>array('block'=>true, 'fade'=>true, 'closeText'=>'×'), 
-                'error'=>array('block'=>true, 'fade'=>true, 'closeText'=>'×'), 
-            ),
-        )); ?>
-
         <div style="padding: 30px" class='pull-left'>
             <h3>
                 Action <span class="badge numSelectedAgents">0</span>
@@ -144,7 +158,10 @@ Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScrip
             </h3>
             <div class="btn-group">
                 <button onclick="pauseSelected()" type="button" class="btn btn-default">
-                    Pause Agents
+                    Agent Pause code
+                </button>
+                <button onclick="hungUpSelected()" type="button" class="btn btn-default">
+                    Hungup User
                 </button>
                 <button type="button" class="btn btn-default" onclick="logoutSelectedUser()">
                     Logout user
@@ -155,9 +172,9 @@ Yii::app()->clientScript->registerScript('autoUpdate', $autoUpdate, CClientScrip
             </div>
         </div>
 
-        <div style="padding: 30px;padding-top : 60px;" class='pull-right'>
+        <div style="padding: 30px;padding-top : 80px;" class='pull-right'>
             <div class="btn-group">
-                <button onclick="pauseSelected()" type="button" class="btn btn-default">
+                <button onclick="logoutAllUser()" type="button" class="btn btn-default">
                     <span class='icon-off'></span>Logout all
                 </button>
             </div>
