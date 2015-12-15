@@ -40,9 +40,9 @@ class DisconnectController extends CController
         $res = 
         $remote->send($agent);
         if (stripos($res, "SUCCESS") !== false ) {
-        	Yii::app()->user->setFlash("success","Agent disconnected");
+        	Yii::app()->user->setFlash("success","Agent paused");
         }else if (stripos($res, "ERROR") !== false) {
-			Yii::app()->user->setFlash("error","Disconnection failed");
+			Yii::app()->user->setFlash("error","Pause action failed");
         }
         $this->redirect(array('site/index'));
     }
