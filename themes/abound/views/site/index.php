@@ -30,13 +30,18 @@ Yii::app()->clientScript->registerScriptFile($baseUrl.'/plugins/alertify.js-0.3.
     window.agentCollection = {};
     window.canUpdateTable = true;
     function addToCollection(currentElement){
+        var numOfProps = 0;
         if (currentElement.checked) {
             window.agentCollection[currentElement.value] = currentElement.value;
         }else{
             delete window.agentCollection[currentElement.value];
         }
-        window.canUpdateTable = false;//pause the auto update
-
+        numOfProps = Object.keys(window.agentCollection).length;
+        if (numOfProps <= 0) {
+            window.canUpdateTable = true;
+        }else{
+            window.canUpdateTable = false;
+        }
         // Update user about the number of selected agents*/
         jQuery(".numSelectedAgents").text(Object.keys(window.agentCollection).length);
     }
