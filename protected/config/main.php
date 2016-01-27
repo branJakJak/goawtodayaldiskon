@@ -111,6 +111,7 @@ return array(
             'username' => 'cron',
             'password' => '1234',
             'charset' => 'utf8',  
+            'emulatePrepare'=>true,
         ),
         'errorHandler' => array(
             // use 'site/error' action to display errors
