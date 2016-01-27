@@ -104,6 +104,13 @@ return array(
             'password' => 'hitman052529',
             'charset' => 'utf8',  
         ),
+        'asterisk_db'=>array(
+            'connectionString' => 'mysql:host=149.202.73.207;dbname=asterisk',
+            'emulatePrepare' => true,
+            'username' => 'cron',
+            'password' => '1234',
+            'charset' => 'utf8',  
+        ),
         'errorHandler' => array(
             // use 'site/error' action to display errors
             'errorAction' => 'site/error',
