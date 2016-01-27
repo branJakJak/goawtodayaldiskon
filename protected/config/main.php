@@ -107,7 +107,6 @@ return array(
         'asterisk_db'=>array(
             'class' => 'CDbConnection',
             'connectionString' => 'mysql:host=149.202.73.207;dbname=asterisk',
-            'emulatePrepare' => true,
             'username' => 'cron',
             'password' => '1234',
             'charset' => 'utf8',  
