@@ -1,5 +1,4 @@
 protected/runtime/*
-/assets
 protected/data/*
 *.bat
 .todo
