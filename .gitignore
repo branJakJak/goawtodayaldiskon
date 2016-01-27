@@ -9,3 +9,4 @@ protected/tests/*
 *.dev
 *.prod
 /requirements
+.phpintel/

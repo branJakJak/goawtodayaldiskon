@@ -30,13 +30,18 @@ Yii::app()->clientScript->registerScriptFile($baseUrl.'/plugins/alertify.js-0.3.
     window.agentCollection = {};
     window.canUpdateTable = true;
     function addToCollection(currentElement){
+        var numOfProps = 0;
         if (currentElement.checked) {
             window.agentCollection[currentElement.value] = currentElement.value;
         }else{
             delete window.agentCollection[currentElement.value];
         }
-        window.canUpdateTable = false;//pause the auto update
-
+        numOfProps = Object.keys(window.agentCollection).length;
+        if (numOfProps <= 0) {
+            window.canUpdateTable = true;
+        }else{
+            window.canUpdateTable = false;
+        }
         // Update user about the number of selected agents*/
         jQuery(".numSelectedAgents").text(Object.keys(window.agentCollection).length);
     }
@@ -66,6 +71,7 @@ Yii::app()->clientScript->registerScriptFile($baseUrl.'/plugins/alertify.js-0.3.
         });
     }
     function logoutSelectedUser() {
+        alertify.log("Logging out selected agent(s). Please wait.");
         for(var propertyName in window.agentCollection) {
             window.logoutUser(window.agentCollection[propertyName]);
         }
@@ -85,7 +91,7 @@ Yii::app()->clientScript->registerScriptFile($baseUrl.'/plugins/alertify.js-0.3.
     }
     function hungUpSelected()
     {
-        alertify.log("Hunging up user agents. Please wait.");
+        alertify.log("Hunging up user agent(s). Please wait.");
         for(var propertyName in window.agentCollection) {
             window.hungUpAgent(window.agentCollection[propertyName]);
         }
@@ -204,15 +210,31 @@ Yii::app()->clientScript->registerScriptFile($baseUrl.'/plugins/alertify.js-0.3.
                         'value'=>'$data["status"]',
                     ),
                     array(
-                        'header'=>'Campaign ',
+                        'header'=>'Reason',
+                        'value'=>'$data["reason"]',
+                    ),
+                    array(
+                        'header'=>'Time',
+                        'value'=>'$data["time"]',
+                    ),
+                    array(
+                        'header'=>'Calls today',
+                        'value'=>'$data["calls_today"]',
+                    ),
+                    array(
+                        'header'=>'Campaign ID',
                         'value'=>'$data["campaign_id"]',
                     ),
                     array(
-                        'type'=>'raw',
-                        'value'=>'CHtml::link("pause", array("pause/agent","agent"=>$data["user"] ), array("class"=>"","confirm"=>"Are you sure you want to PAUSE this agent/user ? "))',
-                    )
+                        'header'=>'Phone number',
+                        'value'=>'$data["phone_number"]',
+                    ),
+                    array(
+                        'header'=>'Term reason ',
+                        'value'=>'$data["term_reason"]',
+                    ),
                 ),
-            'htmlOptions'=>array('id'=>'goautodial')
+                'htmlOptions'=>array('id'=>'goautodial')
             ));
         ?>
 

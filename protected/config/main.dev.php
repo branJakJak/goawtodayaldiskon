@@ -18,6 +18,8 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.libs.RemoteGoAutoDial.class.*',
+        'application.libs.RemoteGoAutoDial.interface.*',
         'bootstrap.helpers.TbHtml',
         'bootstrap.helpers.TbArray',
         'bootstrap.behaviors.TbWidget',
