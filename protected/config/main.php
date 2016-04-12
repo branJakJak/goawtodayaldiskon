@@ -146,7 +146,7 @@ return array(
     // application-level parameters that can be accessed
     // using Yii::app()->params['paramName']
     'params' => array(
-        // this is used in contact page
         'adminEmail' => 'webmaster@example.com',
+        'SERVER_IP' => '81.138.138.57',
     ),
 );
